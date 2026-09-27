@@ -1,0 +1,53 @@
+name: Update README with latest contributions
+
+on:
+  schedule:
+    # Runs every Monday at 06:00 UTC.
+    # Cron has no native "every 2 weeks" option — see the
+    # "Skip odd weeks" step below if you want biweekly instead of weekly.
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {} # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # OPTIONAL: uncomment this step to run every OTHER Monday instead
+      # of every Monday (true biweekly). It skips the job on even ISO
+      # week numbers; flip to "== 0" if you want the opposite parity.
+      # - name: Skip odd weeks (biweekly gate)
+      #   run: |
+      #     week=$(date +%V)
+      #     if [ $((10#$week % 2)) -eq 0 ]; then
+      #       echo "Even week ($week) — skipping this run."
+      #       exit 78   # neutral exit, stops the job without failing it
+      #     fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run contribution scan
+        env:
+          GITHUB_USERNAME: aryansinha1908
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_readme.py
+
+      - name: Commit changes if README updated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- README.md; then
+            echo "No changes to commit."
+          else
+            git add README.md
+            git commit -m "chore: auto-update contributions README"
+            git push
+          fi
