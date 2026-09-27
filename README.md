@@ -5,13 +5,19 @@
 </p>
 
 <p align="center">
+<!-- BADGES:START -->
   <a href="https://github.com/aryansinha1908">
     <img src="https://img.shields.io/badge/GitHub-aryansinha1908-181717?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
   <img src="https://img.shields.io/badge/Pull_Requests-21-blue?style=for-the-badge" alt="Pull Requests" />
   <img src="https://img.shields.io/badge/Merged-16-success?style=for-the-badge" alt="Merged" />
-  <img src="https://img.shields.io/badge/Repositories-16+-orange?style=for-the-badge" alt="Repositories" />
+<!-- BADGES:END -->
 </p>
+
+<!-- Last auto-updated: set by the update-readme workflow on each successful run -->
+<!-- LAST-UPDATED:START -->
+_Last scanned: not yet run automatically — see setup instructions below._
+<!-- LAST-UPDATED:END -->
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aryansinha1908&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" height="165"/>
@@ -43,6 +49,7 @@ A few PRs that involved non-trivial investigation or design decisions, not just 
 
 ## All Pull Requests
 
+<!-- CONTRIBUTIONS-TABLE:START -->
 | Status | Project | PR | Description |
 |:---:|---|---|---|
 | ✅ | [wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest) | [#1408](https://github.com/wemake-services/django-modern-rest/pull/1408) | Build the JWToken payload without `asdict` |
@@ -68,6 +75,7 @@ A few PRs that involved non-trivial investigation or design decisions, not just 
 | ❌ | [Syknapse/Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project) | [#4265](https://github.com/Syknapse/Contribute-To-This-Project/pull/4265) | Added a personal card |
 
 **Legend:** ✅ Merged &nbsp;·&nbsp; 🟡 Open / In Review &nbsp;·&nbsp; ❌ Closed (not merged)
+<!-- CONTRIBUTIONS-TABLE:END -->
 
 ---
 
@@ -97,14 +105,32 @@ Most of the issues below were closed by one of the pull requests listed above:
 
 ## Contribution Stats
 
+<!-- STATS:START -->
 - **Total PRs opened:** 21 (across external repositories)
 - **Merged:** 16
 - **Open / In review:** 2
 - **Closed without merge:** 3
 - **Distinct organizations/projects contributed to:** 16+
+<!-- STATS:END -->
 
 ---
 
 <p align="center">
-  ⭐ If you're a maintainer and want a hand with an open issue, feel free to reach out via <a href="https://github.com/aryansinha1908">GitHub</a>.
+  If you're a maintainer and want a hand with an open issue, feel free to reach out via <a href="https://github.com/aryansinha1908">GitHub</a>.
 </p>
+
+---
+
+<details>
+<summary>About the auto-update workflow (click to expand)</summary>
+
+The tables and stats above are refreshed automatically by <code>.github/workflows/update-readme.yml</code>, which:
+
+1. Runs on a schedule (weekly by default — see the workflow file for a biweekly option).
+2. Calls <code>scripts/update_readme.py</code>, which queries the GitHub Search API for every PR authored by this account.
+3. Rewrites the sections between the <code>&lt;!-- ...:START --&gt;</code> / <code>&lt;!-- ...:END --&gt;</code> comment markers in this file.
+4. Commits the change back to the repo if anything changed.
+
+No setup beyond adding the two files is needed — it uses the repo's built-in <code>GITHUB_TOKEN</code>, which is created automatically for every workflow run.
+
+</details>
