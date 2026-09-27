@@ -65,16 +65,12 @@ A few PRs that involved non-trivial investigation or design decisions, not just 
 | ✅ | [Open-Source-Kigali/docksight](https://github.com/Open-Source-Kigali/docksight) | [#176](https://github.com/Open-Source-Kigali/docksight/pull/176) | Removed leftover `console.log` statements from `ContainerTable.tsx` |
 | ✅ | [moizycodes/moizy-open-source-issues](https://github.com/moizycodes/moizy-open-source-issues) | [#174](https://github.com/moizycodes/moizy-open-source-issues/pull/174) | Added `isCacheStale()` utility with full test coverage |
 | ✅ | [allinerosamkup-ai/northstar-cognitive-platform](https://github.com/allinerosamkup-ai/northstar-cognitive-platform) | [#7](https://github.com/allinerosamkup-ai/northstar-cognitive-platform/pull/7) | Added `--port` CLI flag for server configuration |
-| ❌ | [Tanz2024/citizen-app](https://github.com/Tanz2024/citizen-app) | [#10](https://github.com/Tanz2024/citizen-app/pull/10) | Updated LICENSE copyright holder |
 | ✅ | [lingdojo/kana-dojo](https://github.com/lingdojo/kana-dojo) | [#29201](https://github.com/lingdojo/kana-dojo/pull/29201) | Added a new Japanese false-friend content entry |
 | ✅ | [IvanTran-2001/FriendChise](https://github.com/IvanTran-2001/FriendChise) | [#393](https://github.com/IvanTran-2001/FriendChise/pull/393) | Added `POST` roster API endpoint |
 | ✅ | [Rohan-Shridhar/gridcraft](https://github.com/Rohan-Shridhar/gridcraft) | [#104](https://github.com/Rohan-Shridhar/gridcraft/pull/104) | Fixed inverted paintbrush icon asset |
-| ❌ | [Robbo-lab/mcp-task-app](https://github.com/Robbo-lab/mcp-task-app) | [#71](https://github.com/Robbo-lab/mcp-task-app/pull/71) | Fixed a broken documentation reference in README |
 | ✅ | [geturbackend/urBackend](https://github.com/geturbackend/urBackend) | [#76](https://github.com/geturbackend/urBackend/pull/76) | Added ARIA labels for accessibility |
-| ❌ | [crweiner/hacktoberfest-swag-list](https://github.com/crweiner/hacktoberfest-swag-list) | [#1018](https://github.com/crweiner/hacktoberfest-swag-list/pull/1018) | Added a new entry to the Hacktoberfest swag list |
-| ❌ | [Syknapse/Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project) | [#4265](https://github.com/Syknapse/Contribute-To-This-Project/pull/4265) | Added a personal card |
 
-**Legend:** ✅ Merged &nbsp;·&nbsp; 🟡 Open / In Review &nbsp;·&nbsp; ❌ Closed (not merged)
+**Legend:** ✅ Merged &nbsp;·&nbsp; 🟡 Open / In Review &nbsp;·&nbsp
 <!-- CONTRIBUTIONS-TABLE:END -->
 
 ---
@@ -109,7 +105,6 @@ Most of the issues below were closed by one of the pull requests listed above:
 - **Total PRs opened:** 21 (across external repositories)
 - **Merged:** 16
 - **Open / In review:** 2
-- **Closed without merge:** 3
 - **Distinct organizations/projects contributed to:** 16+
 <!-- STATS:END -->
 
