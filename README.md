@@ -9,14 +9,14 @@
   <a href="https://github.com/aryansinha1908">
     <img src="https://img.shields.io/badge/GitHub-aryansinha1908-181717?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
-  <img src="https://img.shields.io/badge/Pull_Requests-22-blue?style=for-the-badge" alt="Pull Requests" />
-  <img src="https://img.shields.io/badge/Merged-15-success?style=for-the-badge" alt="Merged" />
+  <img src="https://img.shields.io/badge/Pull_Requests-23-blue?style=for-the-badge" alt="Pull Requests" />
+  <img src="https://img.shields.io/badge/Merged-16-success?style=for-the-badge" alt="Merged" />
 <!-- BADGES:END -->
 </p>
 
 <!-- Last auto-updated: set by the update-readme workflow on each successful run -->
 <!-- LAST-UPDATED:START -->
-_Last scanned: 2026-10-12 14:51 UTC_
+_Last scanned: 2026-10-19 12:36 UTC_
 <!-- LAST-UPDATED:END -->
 
 <p align="center">
@@ -52,6 +52,7 @@ A few PRs that involved non-trivial investigation or design decisions, not just 
 <!-- CONTRIBUTIONS-TABLE:START -->
 | Status | Project | PR | Description |
 |:---:|---|---|---|
+| ✅ | [TanbirRamim/open-source-radar](https://github.com/TanbirRamim/open-source-radar) | [#162](https://github.com/TanbirRamim/open-source-radar/pull/162) | Fixed issue#161 |
 | 🟡 | [Open-Source-Kigali/docksight](https://github.com/Open-Source-Kigali/docksight) | [#275](https://github.com/Open-Source-Kigali/docksight/pull/275) | Issue 172 |
 | ✅ | [wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest) | [#1408](https://github.com/wemake-services/django-modern-rest/pull/1408) | Build the JWToken payload without asdict |
 | ✅ | [OpsiMate/OpsiMate](https://github.com/OpsiMate/OpsiMate) | [#900](https://github.com/OpsiMate/OpsiMate/pull/900) | Fix for Issue #772 |
@@ -107,11 +108,11 @@ Most of the issues below were closed by one of the pull requests listed above:
 ## Contribution Stats
 
 <!-- STATS:START -->
-- **Total PRs opened:** 22 (across external repositories)
-- **Merged:** 15
+- **Total PRs opened:** 23 (across external repositories)
+- **Merged:** 16
 - **Open / In review:** 3
 - **Closed without merge:** 4
-- **Distinct organizations/projects contributed to:** 18
+- **Distinct organizations/projects contributed to:** 19
 <!-- STATS:END -->
 
 ---
