@@ -9,14 +9,14 @@
   <a href="https://github.com/aryansinha1908">
     <img src="https://img.shields.io/badge/GitHub-aryansinha1908-181717?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
-  <img src="https://img.shields.io/badge/Pull_Requests-21-blue?style=for-the-badge" alt="Pull Requests" />
-  <img src="https://img.shields.io/badge/Merged-16-success?style=for-the-badge" alt="Merged" />
+  <img src="https://img.shields.io/badge/Pull_Requests-23-blue?style=for-the-badge" alt="Pull Requests" />
+  <img src="https://img.shields.io/badge/Merged-19-success?style=for-the-badge" alt="Merged" />
 <!-- BADGES:END -->
 </p>
 
 <!-- Last auto-updated: set by the update-readme workflow on each successful run -->
 <!-- LAST-UPDATED:START -->
-_Last scanned: not yet run automatically — see setup instructions below._
+_Last scanned: 2026-10-27 05:38 UTC_
 <!-- LAST-UPDATED:END -->
 
 <p align="center">
@@ -40,10 +40,11 @@ A few PRs that involved non-trivial investigation or design decisions, not just 
 
 | Project | Contribution | Impact |
 |---|---|---|
+| [`Tencent/teamai-cli`](https://github.com/Tencent/teamai-cli) | [#1380 – Masked shadowed environment secrets in session scoring](https://github.com/Tencent/teamai-cli/pull/1380) | Fixed a secret leak: when team and environment secrets shared a name, the member's own value went unmasked into judge prompts, evidence and logs; all three call sites now share the workflow engine's mask set |
 | [`wemake-services/django-modern-rest`](https://github.com/wemake-services/django-modern-rest) | [#1404 – Faster JWT encode/decode via `msgspec`](https://github.com/wemake-services/django-modern-rest/pull/1404) | ~15–25% end-to-end latency reduction on JWT operations, byte-identical tokens preserved |
 | [`wemake-services/django-modern-rest`](https://github.com/wemake-services/django-modern-rest) | [#1408 – Removed `dataclasses.asdict` from JWT payload build](https://github.com/wemake-services/django-modern-rest/pull/1408) | `encode` time cut roughly in half (29.9µs → 14.6µs) |
 | [`OpsiMate/OpsiMate`](https://github.com/OpsiMate/OpsiMate) | [#900 – Centralized admin authorization middleware](https://github.com/OpsiMate/OpsiMate/pull/900) | Removed 18 duplicated auth checks across 5 controllers; caught a silently-degraded permission check in the process |
-| [`kishorjakkula/LatticePolicy`](https://github.com/kishorjakkula/LatticePolicy) | [#236 – Retired a stale npm audit exception](https://github.com/kishorjakkula/LatticePolicy/pull/236) | Closed a security-policy gap left over from a prior dependency bump |
+| [`cogitator-ai/Cogitator-AI`](https://github.com/cogitator-ai/Cogitator-AI) | [#304 – Azure model and Bedrock endpoint from env](https://github.com/cogitator-ai/Cogitator-AI/pull/304) _(in review)_ | Closes the last gaps in `COGITATOR_*` env-var coverage so every provider field can be configured in deployments without `cogitator.yml` |
 
 ---
 
@@ -52,29 +53,31 @@ A few PRs that involved non-trivial investigation or design decisions, not just 
 <!-- CONTRIBUTIONS-TABLE:START -->
 | Status | Project | PR | Description |
 |:---:|---|---|---|
-| ✅ | [wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest) | [#1408](https://github.com/wemake-services/django-modern-rest/pull/1408) | Build the JWToken payload without `asdict` |
-| ✅ | [OpsiMate/OpsiMate](https://github.com/OpsiMate/OpsiMate) | [#900](https://github.com/OpsiMate/OpsiMate/pull/900) | Centralized `requireAdmin` middleware, fix for issue #772 |
-| ✅ | [wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest) | [#1404](https://github.com/wemake-services/django-modern-rest/pull/1404) | Faster JWT decode/encode options with `msgspec` |
-| 🟡 | [FZJ-IEK3-VSA/glaes](https://github.com/FZJ-IEK3-VSA/glaes) | [#168](https://github.com/FZJ-IEK3-VSA/glaes/pull/168) | Removed unused images, closes issue #166 |
-| ✅ | [OpenAgentHQ/openagent-eval](https://github.com/OpenAgentHQ/openagent-eval) | [#367](https://github.com/OpenAgentHQ/openagent-eval/pull/367) | Documented `mypy` strict-mode target and current CI status |
-| ✅ | [kishorjakkula/LatticePolicy](https://github.com/kishorjakkula/LatticePolicy) | [#236](https://github.com/kishorjakkula/LatticePolicy/pull/236) | Retired the React Router npm audit exception |
-| 🟡 | [Open-Source-Kigali/docksight](https://github.com/Open-Source-Kigali/docksight) | [#179](https://github.com/Open-Source-Kigali/docksight/pull/179) | Added Prettier formatting across `apps/web` and `packages/protocol` |
-| ✅ | [vc079/AURASCAN](https://github.com/vc079/AURASCAN) | [#3](https://github.com/vc079/AURASCAN/pull/3) | Added streaming CSV export endpoint for telemetry logs |
-| ✅ | [michaelegner/architecture-intelligence-platform](https://github.com/michaelegner/architecture-intelligence-platform) | [#16](https://github.com/michaelegner/architecture-intelligence-platform/pull/16) | Made demo services wait for healthcheck before starting |
-| ✅ | [OpenAgentHQ/openagent-eval](https://github.com/OpenAgentHQ/openagent-eval) | [#363](https://github.com/OpenAgentHQ/openagent-eval/pull/363) | Automated changelog format validation |
-| ✅ | [Open-Source-Kigali/docksight](https://github.com/Open-Source-Kigali/docksight) | [#176](https://github.com/Open-Source-Kigali/docksight/pull/176) | Removed leftover `console.log` statements from `ContainerTable.tsx` |
-| ✅ | [moizycodes/moizy-open-source-issues](https://github.com/moizycodes/moizy-open-source-issues) | [#174](https://github.com/moizycodes/moizy-open-source-issues/pull/174) | Added `isCacheStale()` utility with full test coverage |
-| ✅ | [allinerosamkup-ai/northstar-cognitive-platform](https://github.com/allinerosamkup-ai/northstar-cognitive-platform) | [#7](https://github.com/allinerosamkup-ai/northstar-cognitive-platform/pull/7) | Added `--port` CLI flag for server configuration |
-| ❌ | [Tanz2024/citizen-app](https://github.com/Tanz2024/citizen-app) | [#10](https://github.com/Tanz2024/citizen-app/pull/10) | Updated LICENSE copyright holder |
-| ✅ | [lingdojo/kana-dojo](https://github.com/lingdojo/kana-dojo) | [#29201](https://github.com/lingdojo/kana-dojo/pull/29201) | Added a new Japanese false-friend content entry |
-| ✅ | [IvanTran-2001/FriendChise](https://github.com/IvanTran-2001/FriendChise) | [#393](https://github.com/IvanTran-2001/FriendChise/pull/393) | Added `POST` roster API endpoint |
-| ✅ | [Rohan-Shridhar/gridcraft](https://github.com/Rohan-Shridhar/gridcraft) | [#104](https://github.com/Rohan-Shridhar/gridcraft/pull/104) | Fixed inverted paintbrush icon asset |
-| ❌ | [Robbo-lab/mcp-task-app](https://github.com/Robbo-lab/mcp-task-app) | [#71](https://github.com/Robbo-lab/mcp-task-app/pull/71) | Fixed a broken documentation reference in README |
-| ✅ | [geturbackend/urBackend](https://github.com/geturbackend/urBackend) | [#76](https://github.com/geturbackend/urBackend/pull/76) | Added ARIA labels for accessibility |
-| ❌ | [crweiner/hacktoberfest-swag-list](https://github.com/crweiner/hacktoberfest-swag-list) | [#1018](https://github.com/crweiner/hacktoberfest-swag-list/pull/1018) | Added a new entry to the Hacktoberfest swag list |
-| ❌ | [Syknapse/Contribute-To-This-Project](https://github.com/Syknapse/Contribute-To-This-Project) | [#4265](https://github.com/Syknapse/Contribute-To-This-Project/pull/4265) | Added a personal card |
+| 🟡 | [cogitator-ai/Cogitator-AI](https://github.com/cogitator-ai/Cogitator-AI) | [#304](https://github.com/cogitator-ai/Cogitator-AI/pull/304) | feat(config): read Azure model and Bedrock endpoint from env |
+| ✅ | [Tencent/teamai-cli](https://github.com/Tencent/teamai-cli) | [#1380](https://github.com/Tencent/teamai-cli/pull/1380) | fix(scoring): mask shadowed environment secrets via knownSecrets |
+| ✅ | [O2sa/DevImpact](https://github.com/O2sa/DevImpact) | [#261](https://github.com/O2sa/DevImpact/pull/261) | Fixes #259 |
+| ✅ | [TanbirRamim/open-source-radar](https://github.com/TanbirRamim/open-source-radar) | [#162](https://github.com/TanbirRamim/open-source-radar/pull/162) | Fixed issue#161 |
+| 🟡 | [Open-Source-Kigali/docksight](https://github.com/Open-Source-Kigali/docksight) | [#275](https://github.com/Open-Source-Kigali/docksight/pull/275) | Issue 172 |
+| ✅ | [NITJSR-Web-Team/NITJSR-Version-2](https://github.com/NITJSR-Web-Team/NITJSR-Version-2) | [#855](https://github.com/NITJSR-Web-Team/NITJSR-Version-2/pull/855) | Added news article achievement by QuNITe at NTPC Electron Quiz 2026 |
+| ✅ | [wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest) | [#1408](https://github.com/wemake-services/django-modern-rest/pull/1408) | Build the JWToken payload without asdict |
+| ✅ | [OpsiMate/OpsiMate](https://github.com/OpsiMate/OpsiMate) | [#900](https://github.com/OpsiMate/OpsiMate/pull/900) | Fix for Issue #772 |
+| ✅ | [wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest) | [#1404](https://github.com/wemake-services/django-modern-rest/pull/1404) | Provide faster JWT decode and encode options with msgspec |
+| 🟡 | [FZJ-IEK3-VSA/glaes](https://github.com/FZJ-IEK3-VSA/glaes) | [#168](https://github.com/FZJ-IEK3-VSA/glaes/pull/168) | Closes issue #166 |
+| ✅ | [OpenAgentHQ/openagent-eval](https://github.com/OpenAgentHQ/openagent-eval) | [#367](https://github.com/OpenAgentHQ/openagent-eval/pull/367) | docs(ci): document mypy strict mode target and current CI status #339 |
+| ✅ | [kishorjakkula/LatticePolicy](https://github.com/kishorjakkula/LatticePolicy) | [#236](https://github.com/kishorjakkula/LatticePolicy/pull/236) | Retire the React Router npm audit exception |
+| 🟡 | [Open-Source-Kigali/docksight](https://github.com/Open-Source-Kigali/docksight) | [#179](https://github.com/Open-Source-Kigali/docksight/pull/179) | Issue 173 |
+| ✅ | [vc079/AURASCAN](https://github.com/vc079/AURASCAN) | [#3](https://github.com/vc079/AURASCAN/pull/3) | feat: Adds CSV export to Telemetry logs |
+| ✅ | [michaelegner/architecture-intelligence-platform](https://github.com/michaelegner/architecture-intelligence-platform) | [#16](https://github.com/michaelegner/architecture-intelligence-platform/pull/16) | fix: Makes runtime demo services wait for AIP to become healthy |
+| ✅ | [OpenAgentHQ/openagent-eval](https://github.com/OpenAgentHQ/openagent-eval) | [#363](https://github.com/OpenAgentHQ/openagent-eval/pull/363) | feat(changelog): automate format validation and document process |
+| ✅ | [Open-Source-Kigali/docksight](https://github.com/Open-Source-Kigali/docksight) | [#176](https://github.com/Open-Source-Kigali/docksight/pull/176) | fix: Removes console logs from ContainerTable.tsx file |
+| ✅ | [moizycodes/moizy-open-source-issues](https://github.com/moizycodes/moizy-open-source-issues) | [#174](https://github.com/moizycodes/moizy-open-source-issues/pull/174) | feat: Adds isCacheStale utility with tests |
+| ✅ | [allinerosamkup-ai/northstar-cognitive-platform](https://github.com/allinerosamkup-ai/northstar-cognitive-platform) | [#7](https://github.com/allinerosamkup-ai/northstar-cognitive-platform/pull/7) | feat: Adds port configuration using --port |
+| ✅ | [lingdojo/kana-dojo](https://github.com/lingdojo/kana-dojo) | [#29201](https://github.com/lingdojo/kana-dojo/pull/29201) | content: add new japanese false friend |
+| ✅ | [IvanTran-2001/FriendChise](https://github.com/IvanTran-2001/FriendChise) | [#393](https://github.com/IvanTran-2001/FriendChise/pull/393) | Added roster API endpoints #392 |
+| ✅ | [Rohan-Shridhar/gridcraft](https://github.com/Rohan-Shridhar/gridcraft) | [#104](https://github.com/Rohan-Shridhar/gridcraft/pull/104) | Inverted paintbrush.png |
+| ✅ | [geturbackend/urBackend](https://github.com/geturbackend/urBackend) | [#76](https://github.com/geturbackend/urBackend/pull/76) | Added Aria Labels for buttons in CollectionsTable.jsx and DatabaseSidebar.jsx |
 
-**Legend:** ✅ Merged &nbsp;·&nbsp; 🟡 Open / In Review &nbsp;·&nbsp; ❌ Closed (not merged)
+**Legend:** ✅ Merged &nbsp;·&nbsp; 🟡 Open / In Review
 <!-- CONTRIBUTIONS-TABLE:END -->
 
 ---
@@ -85,6 +88,9 @@ Most of the issues below were closed by one of the pull requests listed above:
 
 | Project | Issue Closed | Fixed By |
 |---|---|---|
+| Tencent/teamai-cli | Environment secret unmasked when shadowed by a team secret | [PR #1380](https://github.com/Tencent/teamai-cli/pull/1380) |
+| O2sa/DevImpact | Native anchor instead of Next.js `Link` for Scoring Methodology CTA | [PR #261](https://github.com/O2sa/DevImpact/pull/261) |
+| TanbirRamim/open-source-radar | No copy button for the equivalent GitHub search | [PR #162](https://github.com/TanbirRamim/open-source-radar/pull/162) |
 | OpsiMate/OpsiMate | Duplicated admin-auth checks | [PR #900](https://github.com/OpsiMate/OpsiMate/pull/900) |
 | wemake-services/django-modern-rest | Slow JWT payload build | [PR #1404](https://github.com/wemake-services/django-modern-rest/pull/1404), [PR #1408](https://github.com/wemake-services/django-modern-rest/pull/1408) |
 | FZJ-IEK3-VSA/glaes | Unused images in repo | [PR #168](https://github.com/FZJ-IEK3-VSA/glaes/pull/168) |
@@ -97,7 +103,6 @@ Most of the issues below were closed by one of the pull requests listed above:
 | Open-Source-Kigali/docksight | Debug logs left in production code | [PR #176](https://github.com/Open-Source-Kigali/docksight/pull/176) |
 | moizycodes/moizy-open-source-issues | Missing cache-staleness utility | [PR #174](https://github.com/moizycodes/moizy-open-source-issues/pull/174) |
 | allinerosamkup-ai/northstar-cognitive-platform | No CLI flag for port config | [PR #7](https://github.com/allinerosamkup-ai/northstar-cognitive-platform/pull/7) |
-| Tanz2024/citizen-app | Stale template copyright notice | [PR #10](https://github.com/Tanz2024/citizen-app/pull/10) |
 | Open-Source-Kigali/docksight | Formatting inconsistencies (`apps/web`) | [PR #179](https://github.com/Open-Source-Kigali/docksight/pull/179) |
 | geturbackend/urBackend | Missing accessibility labels | [PR #76](https://github.com/geturbackend/urBackend/pull/76) |
 
@@ -106,11 +111,10 @@ Most of the issues below were closed by one of the pull requests listed above:
 ## Contribution Stats
 
 <!-- STATS:START -->
-- **Total PRs opened:** 21 (across external repositories)
-- **Merged:** 16
-- **Open / In review:** 2
-- **Closed without merge:** 3
-- **Distinct organizations/projects contributed to:** 16+
+- **Total PRs (merged or in review):** 23 (across external repositories)
+- **Merged:** 19
+- **Open / In review:** 4
+- **Distinct organizations/projects contributed to:** 19
 <!-- STATS:END -->
 
 ---

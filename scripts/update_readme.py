@@ -72,13 +72,17 @@ def fetch_all_prs(username):
     return items
 
 
+def is_merged(item):
+    return bool(item.get("pull_request", {}).get("merged_at"))
+
+
+def is_merged_or_open(item):
+    """Closed-without-merge PRs are not logged."""
+    return is_merged(item) or item.get("state") == "open"
+
+
 def status_icon(item):
-    merged_at = item.get("pull_request", {}).get("merged_at")
-    if merged_at:
-        return "✅"
-    if item.get("state") == "open":
-        return "🟡"
-    return "❌"
+    return "✅" if is_merged(item) else "🟡"
 
 
 def build_table(prs):
@@ -95,27 +99,25 @@ def build_table(prs):
         repo_url = f"https://github.com/{repo}"
         rows.append(f"| {icon} | [{repo}]({repo_url}) | [#{number}]({pr_url}) | {title} |")
     rows.append("")
-    rows.append("**Legend:** ✅ Merged &nbsp;·&nbsp; 🟡 Open / In Review &nbsp;·&nbsp; ❌ Closed (not merged)")
+    rows.append("**Legend:** ✅ Merged &nbsp;·&nbsp; 🟡 Open / In Review")
     return "\n".join(rows)
 
 
 def build_stats(prs, repo_count):
-    merged = sum(1 for i in prs if i.get("pull_request", {}).get("merged_at"))
-    open_ = sum(1 for i in prs if i.get("state") == "open")
-    closed_unmerged = len(prs) - merged - open_
+    merged = sum(1 for i in prs if is_merged(i))
+    open_ = len(prs) - merged
     return "\n".join(
         [
-            f"- **Total PRs opened:** {len(prs)} (across external repositories)",
+            f"- **Total PRs (merged or in review):** {len(prs)} (across external repositories)",
             f"- **Merged:** {merged}",
             f"- **Open / In review:** {open_}",
-            f"- **Closed without merge:** {closed_unmerged}",
             f"- **Distinct organizations/projects contributed to:** {repo_count}",
         ]
     )
 
 
 def build_badges(username, prs):
-    merged = sum(1 for i in prs if i.get("pull_request", {}).get("merged_at"))
+    merged = sum(1 for i in prs if is_merged(i))
     return "\n".join(
         [
             f'  <a href="https://github.com/{username}">',
@@ -149,6 +151,8 @@ def main():
         ]
     else:
         prs = all_prs
+
+    prs = [i for i in prs if is_merged_or_open(i)]
 
     repos = {i["repository_url"].split("/repos/")[1] for i in prs}
 
