@@ -9,14 +9,14 @@
   <a href="https://github.com/aryansinha1908">
     <img src="https://img.shields.io/badge/GitHub-aryansinha1908-181717?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
-  <img src="https://img.shields.io/badge/Pull_Requests-22-blue?style=for-the-badge" alt="Pull Requests" />
-  <img src="https://img.shields.io/badge/Merged-18-success?style=for-the-badge" alt="Merged" />
+  <img src="https://img.shields.io/badge/Pull_Requests-29-blue?style=for-the-badge" alt="Pull Requests" />
+  <img src="https://img.shields.io/badge/Merged-27-success?style=for-the-badge" alt="Merged" />
 <!-- BADGES:END -->
 </p>
 
 <!-- Last auto-updated: set by the update-readme workflow on each successful run -->
 <!-- LAST-UPDATED:START -->
-_Last scanned: 2026-10-27 05:42 UTC_
+_Last scanned: 2026-11-02 15:09 UTC_
 <!-- LAST-UPDATED:END -->
 
 <p align="center">
@@ -53,7 +53,14 @@ A few PRs that involved non-trivial investigation or design decisions, not just 
 <!-- CONTRIBUTIONS-TABLE:START -->
 | Status | Project | PR | Description |
 |:---:|---|---|---|
-| 🟡 | [cogitator-ai/Cogitator-AI](https://github.com/cogitator-ai/Cogitator-AI) | [#304](https://github.com/cogitator-ai/Cogitator-AI/pull/304) | feat(config): read Azure model and Bedrock endpoint from env |
+| ✅ | [yashpandeycodes/IITB-Hackathon](https://github.com/yashpandeycodes/IITB-Hackathon) | [#16](https://github.com/yashpandeycodes/IITB-Hackathon/pull/16) | chore: Removed unnecessary files |
+| ✅ | [yashpandeycodes/IITB-Hackathon](https://github.com/yashpandeycodes/IITB-Hackathon) | [#14](https://github.com/yashpandeycodes/IITB-Hackathon/pull/14) | Integrated leftover API endpoints and fixed some more bugs |
+| ✅ | [yashpandeycodes/IITB-Hackathon](https://github.com/yashpandeycodes/IITB-Hackathon) | [#12](https://github.com/yashpandeycodes/IITB-Hackathon/pull/12) | Core engine and other things |
+| ✅ | [yashpandeycodes/IITB-Hackathon](https://github.com/yashpandeycodes/IITB-Hackathon) | [#9](https://github.com/yashpandeycodes/IITB-Hackathon/pull/9) | Added AI features |
+| ✅ | [yashpandeycodes/IITB-Hackathon](https://github.com/yashpandeycodes/IITB-Hackathon) | [#7](https://github.com/yashpandeycodes/IITB-Hackathon/pull/7) | Integrated main with Aryan's Phase 3 |
+| ✅ | [yashpandeycodes/IITB-Hackathon](https://github.com/yashpandeycodes/IITB-Hackathon) | [#5](https://github.com/yashpandeycodes/IITB-Hackathon/pull/5) | fix(auth): accept BREVO_SMTP_USER as the Brevo SMTP login |
+| ✅ | [yashpandeycodes/IITB-Hackathon](https://github.com/yashpandeycodes/IITB-Hackathon) | [#4](https://github.com/yashpandeycodes/IITB-Hackathon/pull/4) | hope it works :/ |
+| ✅ | [cogitator-ai/Cogitator-AI](https://github.com/cogitator-ai/Cogitator-AI) | [#304](https://github.com/cogitator-ai/Cogitator-AI/pull/304) | feat(config): read Azure model and Bedrock endpoint from env |
 | ✅ | [Tencent/teamai-cli](https://github.com/Tencent/teamai-cli) | [#1380](https://github.com/Tencent/teamai-cli/pull/1380) | fix(scoring): mask shadowed environment secrets via knownSecrets |
 | ✅ | [O2sa/DevImpact](https://github.com/O2sa/DevImpact) | [#261](https://github.com/O2sa/DevImpact/pull/261) | Fixes #259 |
 | ✅ | [TanbirRamim/open-source-radar](https://github.com/TanbirRamim/open-source-radar) | [#162](https://github.com/TanbirRamim/open-source-radar/pull/162) | Fixed issue#161 |
@@ -61,7 +68,7 @@ A few PRs that involved non-trivial investigation or design decisions, not just 
 | ✅ | [wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest) | [#1408](https://github.com/wemake-services/django-modern-rest/pull/1408) | Build the JWToken payload without asdict |
 | ✅ | [OpsiMate/OpsiMate](https://github.com/OpsiMate/OpsiMate) | [#900](https://github.com/OpsiMate/OpsiMate/pull/900) | Fix for Issue #772 |
 | ✅ | [wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest) | [#1404](https://github.com/wemake-services/django-modern-rest/pull/1404) | Provide faster JWT decode and encode options with msgspec |
-| 🟡 | [FZJ-IEK3-VSA/glaes](https://github.com/FZJ-IEK3-VSA/glaes) | [#168](https://github.com/FZJ-IEK3-VSA/glaes/pull/168) | Closes issue #166 |
+| ✅ | [FZJ-IEK3-VSA/glaes](https://github.com/FZJ-IEK3-VSA/glaes) | [#168](https://github.com/FZJ-IEK3-VSA/glaes/pull/168) | Closes issue #166 |
 | ✅ | [OpenAgentHQ/openagent-eval](https://github.com/OpenAgentHQ/openagent-eval) | [#367](https://github.com/OpenAgentHQ/openagent-eval/pull/367) | docs(ci): document mypy strict mode target and current CI status #339 |
 | ✅ | [kishorjakkula/LatticePolicy](https://github.com/kishorjakkula/LatticePolicy) | [#236](https://github.com/kishorjakkula/LatticePolicy/pull/236) | Retire the React Router npm audit exception |
 | 🟡 | [Open-Source-Kigali/docksight](https://github.com/Open-Source-Kigali/docksight) | [#179](https://github.com/Open-Source-Kigali/docksight/pull/179) | Issue 173 |
@@ -110,10 +117,10 @@ Most of the issues below were closed by one of the pull requests listed above:
 ## Contribution Stats
 
 <!-- STATS:START -->
-- **Total PRs (merged or in review):** 22 (across external repositories)
-- **Merged:** 18
-- **Open / In review:** 4
-- **Distinct organizations/projects contributed to:** 18
+- **Total PRs (merged or in review):** 29 (across external repositories)
+- **Merged:** 27
+- **Open / In review:** 2
+- **Distinct organizations/projects contributed to:** 19
 <!-- STATS:END -->
 
 ---
