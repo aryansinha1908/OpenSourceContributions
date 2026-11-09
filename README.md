@@ -16,7 +16,7 @@
 
 <!-- Last auto-updated: set by the update-readme workflow on each successful run -->
 <!-- LAST-UPDATED:START -->
-_Last scanned: 2026-11-02 15:09 UTC_
+_Last scanned: 2026-11-09 15:39 UTC_
 <!-- LAST-UPDATED:END -->
 
 <p align="center">
